@@ -1,0 +1,31 @@
+<persistence keyspace="test1" table="person" ttl="86400">
+    <keyspaceOptions>
+        REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3}
+        AND DURABLE_WRITES = true
+    </keyspaceOptions>
+    <tableOptions>
+        comment = 'A most excellent and useful table'
+        AND read_repair_chance = 0.2
+    </tableOptions>
+    <keyPersistence class="pri.wenbo.PersonId" strategy="POJO">
+        <partitionKey>
+            <field name="companyCode" column="company" />
+            <field name="departmentCode" column="department" />
+        </partitionKey>
+        <clusterKey>
+            <field name="personNumber" column="number" sort="desc"/>
+        </clusterKey>
+    </keyPersistence>
+    <valuePersistence class="pri.wenbo.Person"
+                      strategy="POJO"
+                      serializer="org.apache.ignite.cache.store.cassandra.serializer.KryoSerializer">
+        <field name="firstName" column="first_name" />
+        <field name="lastName" column="last_name" />
+        <field name="age" />
+        <field name="married" index="true"/>
+        <field name="height" />
+        <field name="weight" />
+        <field name="birthDate" column="birth_date" />
+        <field name="phones" />
+    </valuePersistence>
+</persistence>

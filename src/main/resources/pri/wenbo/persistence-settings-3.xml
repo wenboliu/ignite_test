@@ -1,0 +1,20 @@
+<persistence keyspace="test1" table="company" ttl="86400">
+    <keyspaceOptions>
+        REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3}
+        AND DURABLE_WRITES = true
+    </keyspaceOptions>
+    <tableOptions>
+        comment = 'A most excellent and useful table'
+        AND read_repair_chance = 0.2
+    </tableOptions>
+    <keyPersistence class="pri.wenbo.CompanyId" strategy="POJO">
+        <partitionKey>
+            <field name="companyCode" column="companyCode" />
+        </partitionKey>
+    </keyPersistence>
+    <valuePersistence class="pri.wenbo.Company"
+                      strategy="POJO"
+                      serializer="org.apache.ignite.cache.store.cassandra.serializer.KryoSerializer">
+        <field name="name" column="name" />
+    </valuePersistence>
+</persistence>
