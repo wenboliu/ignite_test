@@ -1,0 +1,50 @@
+<persistence keyspace="cms" table="cms_order_item" ttl="86400">
+    <keyspaceOptions>
+        REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3}
+        AND DURABLE_WRITES = true
+    </keyspaceOptions>
+    <tableOptions>
+        comment = 'A most excellent and useful table'
+        AND read_repair_chance = 0.2
+    </tableOptions>
+    <keyPersistence class="pri.wenbo.pojos.OrderItemId" strategy="POJO">
+        <partitionKey>
+            <field name="dpId" column="dpId" />
+        </partitionKey>
+
+        <clusterKey>
+            <field name="orderId" column="orderId"/>
+            <field name="oid" column="oid"/>
+        </clusterKey>
+    </keyPersistence>
+    <valuePersistence class="pri.wenbo.pojos.OrderItem"
+                      strategy="POJO"
+                      serializer="org.apache.ignite.cache.store.cassandra.serializer.KryoSerializer">
+        <field name="title" index="true"/>
+        <field name="status" index="true"/>
+
+        <field name="total_fee"/>
+        <field name="discount_fee"/>
+        <field name="adjust_fee"/>
+        <field name="payment"/>
+        <field name="price"/>
+
+        <field name="num"/>
+        <field name="num_iid"/>
+        <field name="refund_status"/>
+        <field name="pic_path"/>
+        <field name="outer_iid"/>
+
+        <field name="sku_properties_name"/>
+        <field name="sku_id"/>
+        <field name="trade_modified"/>
+        <field name="timeout_action_time"/>
+
+        <field name="buyer_rate"/>
+        <field name="seller_rate"/>
+        <field name="item_order_created"/>
+        <field name="item_order_updated"/>
+        <field name="logistics_company"/>
+        <field name="invoice_no"/>
+    </valuePersistence>
+</persistence>

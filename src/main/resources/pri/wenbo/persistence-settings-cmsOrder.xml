@@ -1,0 +1,58 @@
+<persistence keyspace="cms" table="cms_order" ttl="86400">
+    <keyspaceOptions>
+        REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3}
+        AND DURABLE_WRITES = true
+    </keyspaceOptions>
+    <tableOptions>
+        comment = 'A most excellent and useful table'
+        AND read_repair_chance = 0.2
+    </tableOptions>
+    <keyPersistence class="pri.wenbo.pojos.CmsOrderId" strategy="POJO">
+        <partitionKey>
+            <field name="dpId" column="dpId" />
+        </partitionKey>
+
+        <clusterKey>
+            <field name="orderId" column="orderId" sort="desc"/>
+        </clusterKey>
+
+    </keyPersistence>
+    <valuePersistence class="pri.wenbo.pojos.CmsOrder"
+                      strategy="POJO"
+                      serializer="org.apache.ignite.cache.store.cassandra.serializer.KryoSerializer">
+        <field name="customerno" index="true"/>
+        <field name="created" index="true"/>
+        <field name="status"/>
+
+        <field name="endtime"/>
+        <field name="trade_from"/>
+        <field name="pay_time"/>
+        <field name="consign_time"/>
+        <field name="modified"/>
+        <field name="payment"/>
+        <field name="receiver_name"/>
+        <field name="receiver_state"/>
+        <field name="receiver_city"/>
+        <field name="receiver_district"/>
+        <field name="receiver_address"/>
+        <field name="receiver_zip"/>
+        <field name="receiver_mobile"/>
+        <field name="receiver_phone"/>
+        <field name="num"/>
+        <field name="buyer_message"/>
+        <field name="seller_memo"/>
+        <field name="seller_flag"/>
+        <field name="post_fee"/>
+        <field name="shipping_type"/>
+        <field name="order_status"/>
+        <field name="order_created"/>
+        <field name="order_updated"/>
+        <field name="type"/>
+        <field name="step_trade_status"/>
+        <field name="cod_status"/>
+        <field name="step_paid_fee"/>
+        <field name="timeout_action_time"/>
+        <field name="is_part_consign"/>
+        <field name="discount_fee"/>
+    </valuePersistence>
+</persistence>
