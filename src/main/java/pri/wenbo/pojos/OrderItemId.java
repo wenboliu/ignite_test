@@ -11,29 +11,18 @@ import java.io.Serializable;
 public class OrderItemId implements Serializable{
 
     @QuerySqlField
-    private String dpId;
-
-    @QuerySqlField
     @AffinityKeyMapped
-    private String orderId;
+    private String dpIdOrderId;
 
     @QuerySqlField
     private String oid;
 
-    public String getDpId() {
-        return dpId;
+    public String getDpIdOrderId() {
+        return dpIdOrderId;
     }
 
-    public void setDpId(String dpId) {
-        this.dpId = dpId;
-    }
-
-    public String getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public void setDpIdOrderId(String dpIdOrderId) {
+        this.dpIdOrderId = dpIdOrderId;
     }
 
     public String getOid() {
@@ -46,7 +35,7 @@ public class OrderItemId implements Serializable{
 
     public String getId()
     {
-        return orderId + "_" + oid;
+        return dpIdOrderId + "_" + oid;
     }
 
     @Override

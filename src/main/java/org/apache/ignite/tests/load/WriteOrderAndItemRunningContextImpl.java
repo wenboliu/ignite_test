@@ -2,7 +2,6 @@ package org.apache.ignite.tests.load;
 
 import com.google.common.collect.Lists;
 import pri.wenbo.pojos.CmsOrder;
-import pri.wenbo.pojos.CmsOrderId;
 import pri.wenbo.pojos.OrderItem;
 import pri.wenbo.pojos.OrderItemId;
 
@@ -23,7 +22,7 @@ public class WriteOrderAndItemRunningContextImpl implements RunningContext {
         this.startDpId = startPosition;
         this.endDpId = endPosition;
         this.startOrderId = calculateStartPosition(startPosition);
-        this.endOrderId = calculateEndPosition(startPosition, endPosition);
+        this.endOrderId = this.startOrderId + calculateEndPosition(startPosition, endPosition);
     }
 
     @Override
@@ -58,11 +57,10 @@ public class WriteOrderAndItemRunningContextImpl implements RunningContext {
         return new KeyValuePair(CACHE_ORDER_ITEM_NAME, generateOrderItemId(dpId, orderId, item_id), generateOrderItem());
     }
 
-    private CmsOrderId generateOrderId(int dp_Id, int order_id) {
-        CmsOrderId cmsOrderId = new CmsOrderId();
-        cmsOrderId.setDpId(LoadDataUtils.toString(dp_Id, 15));
-        cmsOrderId.setOrderId(LoadDataUtils.toString(order_id, 15));
-        return cmsOrderId;
+    private String generateOrderId(int dp_Id, int order_id) {
+        String dpId = LoadDataUtils.toString(dp_Id, 15);
+        String orderId = LoadDataUtils.toString(order_id, 15);
+        return dpId + "-" + orderId;
     }
 
     private CmsOrder generateOrder(int dp_Id, int order_id) {
@@ -76,8 +74,9 @@ public class WriteOrderAndItemRunningContextImpl implements RunningContext {
     private OrderItemId generateOrderItemId(int dp_Id, int order_id, int item_id)
     {
         OrderItemId itemId = new OrderItemId();
-        itemId.setDpId(LoadDataUtils.toString(dp_Id, 15));
-        itemId.setOrderId(LoadDataUtils.toString(order_id, 15));
+        String dpId = LoadDataUtils.toString(dp_Id, 15);
+        String orderId = LoadDataUtils.toString(order_id, 15);
+        itemId.setDpIdOrderId(dpId + "-" + orderId);
         itemId.setOid(LoadDataUtils.toString(item_id, 3));
         return itemId;
     }
@@ -113,6 +112,6 @@ public class WriteOrderAndItemRunningContextImpl implements RunningContext {
         for (int i = startPosition; i < endPosition; i++) {
             orderCount += OrderCount.orderCountOfDp(i);
         }
-        return orderCount;
+        return orderCount - 1;
     }
 }

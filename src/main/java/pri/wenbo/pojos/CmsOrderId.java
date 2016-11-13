@@ -9,36 +9,25 @@ import java.io.Serializable;
  */
 public class CmsOrderId implements Serializable{
     @QuerySqlField
-    private String dpId;
+    private String dpIdOrderId;
 
-    @QuerySqlField
-    private String orderId;
-
-    public String getOrderId() {
-        return orderId;
+    public String getDpIdOrderId() {
+        return dpIdOrderId;
     }
 
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
-    }
-
-    public String getDpId() {
-        return dpId;
-    }
-
-    public void setDpId(String dpId) {
-        this.dpId = dpId;
+    public void setDpIdOrderId(String dpIdOrderId) {
+        this.dpIdOrderId = dpIdOrderId;
     }
 
     @Override
     public int hashCode() {
-        return orderId.hashCode();
+        return dpIdOrderId.hashCode();
     }
 
     @Override
     public boolean equals(Object obj) {
         CmsOrderId anotherCmsOrderId = (CmsOrderId) obj;
-        return orderId.equals(anotherCmsOrderId.orderId);
+        return dpIdOrderId.equals(anotherCmsOrderId.dpIdOrderId);
     }
 
 }

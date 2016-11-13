@@ -7,16 +7,7 @@
         comment = 'A most excellent and useful table'
         AND read_repair_chance = 0.2
     </tableOptions>
-    <keyPersistence class="pri.wenbo.pojos.CmsOrderId" strategy="POJO">
-        <partitionKey>
-            <field name="dpId" column="dpId" />
-        </partitionKey>
-
-        <clusterKey>
-            <field name="orderId" column="orderId" sort="desc"/>
-        </clusterKey>
-
-    </keyPersistence>
+    <keyPersistence class="java.lang.String" strategy="PRIMITIVE"/>
     <valuePersistence class="pri.wenbo.pojos.CmsOrder"
                       strategy="POJO"
                       serializer="org.apache.ignite.cache.store.cassandra.serializer.KryoSerializer">

@@ -1,7 +1,6 @@
 package org.apache.ignite.tests.load;
 
 import com.google.common.collect.Lists;
-import pri.wenbo.pojos.CmsOrderId;
 
 import java.util.List;
 
@@ -50,11 +49,10 @@ public class QueryRunningContextImpl implements RunningContext {
     }
 
 
-    private CmsOrderId generateOrderId(int dp_Id, int order_id) {
-        CmsOrderId cmsOrderId = new CmsOrderId();
-        cmsOrderId.setDpId(LoadDataUtils.toString(dp_Id, 15));
-        cmsOrderId.setOrderId(LoadDataUtils.toString(order_id, 15));
-        return cmsOrderId;
+    private String generateOrderId(int dp_Id, int order_id) {
+        String dpId = LoadDataUtils.toString(dp_Id, 15);
+        String orderId = LoadDataUtils.toString(order_id, 15);
+        return dpId + "-" + orderId;
     }
 
 

@@ -9,7 +9,6 @@ import org.apache.ignite.tests.load.RunningContext;
 import org.apache.ignite.tests.load.RuntimeManager;
 import org.apache.ignite.tests.load.Worker;
 import pri.wenbo.pojos.CmsOrder;
-import pri.wenbo.pojos.CmsOrderId;
 
 import javax.cache.Cache.Entry;
 import java.util.concurrent.Executor;
@@ -47,17 +46,17 @@ public class QueryWorker extends Worker {
         long middle = LoadDataUtils.randomDate();
         long start = middle - 1800 * 1000;
         long end = middle + 1800 * 1000;
-        CmsOrderId cmsOrderId = (CmsOrderId) key;
-        SqlQuery personJoinSql = new SqlQuery<AffinityKey<String>, CmsOrder>(CmsOrder.class, "from \"cmsOrder\".CmsOrder , \"orderItem\".OrderItem where \"cmsOrder\".CmsOrder.orderId = \"orderItem\".OrderItem.orderId and \"cmsOrder\".CmsOrder.dpId = ? and \"cmsOrder\".CmsOrder.created >= ? and \"cmsOrder\".CmsOrder.created <= ? ");
-        personJoinSql.setArgs(cmsOrderId.getDpId(), start, end);
+        String dpIdOrderId = (String) key;
+        SqlQuery personJoinSql = new SqlQuery<AffinityKey<String>, CmsOrder>(CmsOrder.class, "from \"cmsOrder\".CmsOrder , \"orderItem\".OrderItem where \"cmsOrder\".CmsOrder._key = \"orderItem\".OrderItem.dpIdOrderId and \"cmsOrder\".CmsOrder._key = ? and \"cmsOrder\".CmsOrder.created >= ? and \"cmsOrder\".CmsOrder.created <= ? ");
+        personJoinSql.setArgs(dpIdOrderId, start, end);
         personJoinSql.setPageSize(10);
         personJoinSql.setDistributedJoins(true);
 
 
         int i = 0;
 
-        try (QueryCursor<Entry<CmsOrderId, CmsOrder>> cursor = cache.query(personJoinSql)) {
-            for (Entry<CmsOrderId, CmsOrder> e : cursor) {
+        try (QueryCursor<Entry<String, CmsOrder>> cursor = cache.query(personJoinSql)) {
+            for (Entry<String, CmsOrder> e : cursor) {
                 i++;
             }
         }

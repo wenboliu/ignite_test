@@ -12,7 +12,9 @@ import org.apache.ignite.configuration.IgniteConfiguration;
 import org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi;
 import org.apache.ignite.spi.discovery.tcp.ipfinder.vm.TcpDiscoveryVmIpFinder;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.util.StringUtils;
+import pri.wenbo.pojos.CmsOrder;
+import pri.wenbo.pojos.OrderItem;
+import pri.wenbo.pojos.OrderItemId;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -61,11 +63,16 @@ public class RuntimeManager {
         CacheConfiguration cacheConfiguration = new CacheConfiguration();
         cacheConfiguration.setName(name);
         cacheConfiguration.setCacheStoreFactory(createCassandraCacheStoreFactory(name, dataSource));
-        String pojoName = "pri.wenbo.pojos." + StringUtils.capitalize(name);
-        try {
-            cacheConfiguration.setIndexedTypes(Class.forName(pojoName + "Id"), Class.forName(pojoName));
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+//        String pojoName = "pri.wenbo.pojos." + StringUtils.capitalize(name);
+//        try {
+//            cacheConfiguration.setIndexedTypes(Class.forName(pojoName + "Id"), Class.forName(pojoName));
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+        if(name.contains("orderItem")) {
+            cacheConfiguration.setIndexedTypes(OrderItemId.class, OrderItem.class);
+        } else {
+            cacheConfiguration.setIndexedTypes(String.class, CmsOrder.class);
         }
         cacheConfigurationMap.put(name, cacheConfiguration);
     }

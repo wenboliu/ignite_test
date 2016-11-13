@@ -1,0 +1,129 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/bin/java -Xms1024m -Xmx1024m -DIGNITE_SKIP_CONFIGURATION_CONSISTENCY_CHECK=true -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 14.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/htmlconverter.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Users/twer/Work/kefuzhongxin/poc/build_env/ignite-demo/target/classes:/Users/twer/.m2/repository/org/apache/ignite/ignite-core/1.7.0/ignite-core-1.7.0.jar:/Users/twer/.m2/repository/javax/cache/cache-api/1.0.0/cache-api-1.0.0.jar:/Users/twer/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/twer/.m2/repository/org/gridgain/ignite-shmem/1.0.0/ignite-shmem-1.0.0.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-cassandra/1.7.0/ignite-cassandra-1.7.0.jar:/Users/twer/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/twer/.m2/repository/com/esotericsoftware/kryo/3.0.3/kryo-3.0.3.jar:/Users/twer/.m2/repository/com/esotericsoftware/reflectasm/1.10.1/reflectasm-1.10.1.jar:/Users/twer/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/Users/twer/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/twer/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/twer/.m2/repository/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.jar:/Users/twer/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar:/Users/twer/.m2/repository/io/netty/netty-handler/4.0.27.Final/netty-handler-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-buffer/4.0.27.Final/netty-buffer-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-common/4.0.27.Final/netty-common-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-transport/4.0.27.Final/netty-transport-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-codec/4.0.27.Final/netty-codec-4.0.27.Final.jar:/Users/twer/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/Users/twer/.m2/repository/com/codahale/metrics/metrics-core/3.0.2/metrics-core-3.0.2.jar:/Users/twer/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/twer/.m2/repository/com/google/code/simple-spring-memcached/spymemcached/2.7.3/spymemcached-2.7.3.jar:/Users/twer/.m2/repository/org/jboss/netty/netty/3.2.0.Final/netty-3.2.0.Final.jar:/Users/twer/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/twer/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-spring/1.7.0/ignite-spring-1.7.0.jar:/Users/twer/.m2/repository/org/springframework/spring-core/4.1.0.RELEASE/spring-core-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-aop/4.1.0.RELEASE/spring-aop-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/twer/.m2/repository/org/springframework/spring-expression/4.1.0.RELEASE/spring-expression-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-tx/4.1.0.RELEASE/spring-tx-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-jdbc/4.1.0.RELEASE/spring-jdbc-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-indexing/1.7.0/ignite-indexing-1.7.0.jar:/Users/twer/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar:/Users/twer/.m2/repository/org/apache/lucene/lucene-core/3.5.0/lucene-core-3.5.0.jar:/Users/twer/.m2/repository/com/h2database/h2/1.4.191/h2-1.4.191.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-log4j/1.7.0/ignite-log4j-1.7.0.jar:/Users/twer/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-core/1.7.0/ignite-core-1.7.0-tests.jar:/Users/twer/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/twer/.m2/repository/org/springframework/spring-beans/4.1.0.RELEASE/spring-beans-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-context/4.1.0.RELEASE/spring-context-4.1.0.RELEASE.jar:/Applications/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.apache.ignite.tests.IgnitePersistentStoreLoadTest 192.168.0.103 localhost
+00:16:19,737  INFO [main] - Ignite load tests execution started
+00:16:19,737  INFO [main] - Ignite load tests execution started
+00:16:19,763  INFO [main] - Running BULK_WRITE test
+00:16:19,763  INFO [main] - Running BULK_WRITE test
+00:16:19,768  INFO [main] - Starting workers
+00:16:19,768  INFO [main] - Starting workers
+00:16:19,768  INFO [main] - Setting up load tests driver
+00:16:19,768  INFO [main] - Setting up load tests driver
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+00:16:20,589  INFO [main] - 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+00:16:20,589  INFO [main] - Config URL: n/a
+00:16:20,590  INFO [main] - Daemon mode: off
+00:16:20,590  INFO [main] - OS: Mac OS X 10.12.1 x86_64
+00:16:20,590  INFO [main] - OS user: twer
+00:16:20,590  INFO [main] - Language runtime: Java Platform API Specification ver. 1.8
+00:16:20,590  INFO [main] - VM information: Java(TM) SE Runtime Environment 1.8.0-ea-b120 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.0-b62
+00:16:20,590  INFO [main] - VM total memory: 0.96GB
+00:16:20,590  INFO [main] - Remote Management [restart: off, REST: on, JMX (remote: off)]
+00:16:20,591  INFO [main] - IGNITE_HOME=null
+00:16:20,592  INFO [main] - VM arguments: [-Xms1024m, -Xmx1024m, -DIGNITE_SKIP_CONFIGURATION_CONSISTENCY_CHECK=true, -Didea.launcher.port=7532, -Didea.launcher.bin.path=/Applications/IntelliJ IDEA 14.app/Contents/bin, -Dfile.encoding=UTF-8]
+00:16:20,592  INFO [main] - Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache', 'cmsOrder', 'orderItem']
+00:16:20,706  INFO [main] - Non-loopback local IPs: 192.168.0.103, fe80:0:0:0:1420:7dd1:c994:b3bb%en0, fe80:0:0:0:bc3:9612:dcff:87a4%utun0, fe80:0:0:0:e879:32ff:feea:eb6b%awdl0
+00:16:20,706  INFO [main] - Enabled local MACs: EA7932EAEB6B, F45C89A41BA7
+00:16:20,731  INFO [main] - Configured plugins:
+00:16:20,731  INFO [main] -   ^-- None
+00:16:20,731  INFO [main] - 
+00:16:20,870  INFO [main] - IPC shared memory server endpoint started [port=48101, tokDir=/var/folders/4c/dg3n7kld5z931ypg18nxwh1c0000gn/T/ignite/work/ipc/shmem/d4480e47-c933-4ec9-8f6a-bd57a22b4c50-20589]
+00:16:20,871  INFO [main] - Successfully bound shared memory communication to TCP port [port=48101, locHost=0.0.0.0/0.0.0.0]
+00:16:20,919  INFO [main] - Successfully bound to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0]
+00:16:20,986  WARN [main] - Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+00:16:21,154  WARN [main] - Collision resolution is disabled (all jobs will be activated upon arrival).
+00:16:21,160  WARN [main] - Swap space is disabled. To enable use FileSwapSpaceSpi.
+00:16:21,162  INFO [main] - Security status [authentication=off, tls/ssl=off]
+00:16:21,700  INFO [main] - Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+00:16:22,328  WARN [main] - Some classes in query configuration cannot be written in binary format because they either implement Externalizable interface or have writeObject/readObject methods. Instances of these classes will be deserialized in order to build indexes. Please ensure that all nodes have these classes in classpath. To enable binary serialization either implement Binarylizable interface or set explicit serializer using BinaryTypeConfiguration.setSerializer() method: [class pri.wenbo.pojos.CmsOrder]
+00:16:22,328  WARN [main] - <cmsOrder> Persistence store is configured, but both read-through and write-through are disabled. This configuration makes sense if the store implements loadCache method only. If this is the case, ignore this warning. Otherwise, fix the configuration for the cache: cmsOrder
+00:16:22,357  INFO [main] - Started cache [name=cmsOrder, mode=PARTITIONED]
+00:16:22,390  INFO [main] - Started cache [name=ignite-sys-cache, mode=REPLICATED]
+00:16:22,391  INFO [main] - Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+00:16:22,395  WARN [main] - Some classes in query configuration cannot be written in binary format because they either implement Externalizable interface or have writeObject/readObject methods. Instances of these classes will be deserialized in order to build indexes. Please ensure that all nodes have these classes in classpath. To enable binary serialization either implement Binarylizable interface or set explicit serializer using BinaryTypeConfiguration.setSerializer() method: [class pri.wenbo.pojos.OrderItem]
+00:16:22,395  WARN [main] - <orderItem> Persistence store is configured, but both read-through and write-through are disabled. This configuration makes sense if the store implements loadCache method only. If this is the case, ignore this warning. Otherwise, fix the configuration for the cache: orderItem
+00:16:22,396  INFO [main] - Started cache [name=orderItem, mode=PARTITIONED]
+00:16:22,397  INFO [main] - Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+00:16:22,598  INFO [main] - To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+00:16:22,598  INFO [main] - 
+00:16:22,600  INFO [main] - 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Mac OS X 10.12.1 x86_64
+>>> CPU(s): 8
+>>> Heap: 1.0GB
+>>> VM name: 20589@wenbo.local
+>>> Local node [ID=D4480E47-C933-4EC9-8F6A-BD57A22B4C50, order=2, clientMode=true]
+>>> Local node addresses: [192.168.0.103/0:0:0:0:0:0:0:1, /127.0.0.1, /192.168.0.103]
+>>> Local ports: TCP:11212 TCP:47101 TCP:48101 
+
+00:16:22,601  INFO [main] - Topology snapshot [ver=2, servers=1, clients=1, CPUs=8, heap=11.0GB]
+00:16:22,601  INFO [main] - Load tests driver setup successfully completed
+00:16:22,601  INFO [main] - Load tests driver setup successfully completed
+00:16:22,605  INFO [main] - Workers started
+00:16:22,605  INFO [main] - Workers started
+00:16:22,605  INFO [main] - Waiting for workers to complete
+00:16:22,605  INFO [main] - Waiting for workers to complete
+00:16:22,605  INFO [BULK_WRITE-worker-0] - Test execution started
+00:16:22,879  WARN [BULK_WRITE-worker-0] - Class "pri.wenbo.pojos.CmsOrder" cannot be serialized using BinaryMarshaller because it either implements Externalizable interface or have writeObject/readObject methods. OptimizedMarshaller will be used instead and class instances will be deserialized on the server. Please ensure that all nodes have this class in classpath. To enable binary serialization either implement Binarylizable interface or set explicit serializer using BinaryTypeConfiguration.setSerializer() method.
+00:16:23,548  WARN [BULK_WRITE-worker-0] - Class "pri.wenbo.pojos.OrderItem" cannot be serialized using BinaryMarshaller because it either implements Externalizable interface or have writeObject/readObject methods. OptimizedMarshaller will be used instead and class instances will be deserialized on the server. Please ensure that all nodes have this class in classpath. To enable binary serialization either implement Binarylizable interface or set explicit serializer using BinaryTypeConfiguration.setSerializer() method.
+00:16:31,961  INFO [ignite-update-notifier-timer] - Your version is up to date.
+00:16:52,970  INFO [BULK_WRITE-worker-0] - Messages processed 100000, speed 3333 msg/sec, 10% completed, errors 0 / 0.00%
+00:17:23,201  INFO [BULK_WRITE-worker-0] - Messages processed 286000, speed 4766 msg/sec, 20% completed, errors 0 / 0.00%
+00:17:53,307  INFO [BULK_WRITE-worker-0] - Messages processed 468000, speed 5200 msg/sec, 30% completed, errors 0 / 0.00%
+00:18:23,527  INFO [BULK_WRITE-worker-0] - Messages processed 618000, speed 5150 msg/sec, 40% completed, errors 0 / 0.00%
+00:18:53,793  INFO [BULK_WRITE-worker-0] - Messages processed 776000, speed 5139 msg/sec, 50% completed, errors 0 / 0.00%
+00:19:10,652  INFO [BULK_WRITE-worker-0] - Test execution successfully completed. Statistics: 
+Start time: 12:16:22
+Finish time: 12:19:10
+Duration: 168 sec
+Processed messages: 848000
+Processing speed: 5047 msg/sec
+Errors: 0 / 0.00%
+00:19:10,656  INFO [main] - Worker BULK_WRITE-worker-0 successfully completed
+00:19:10,656  INFO [main] - Worker BULK_WRITE-worker-0 successfully completed
+00:19:10,656  INFO [main] - BULK_WRITE test execution successfully completed.
+00:19:10,656  INFO [main] - BULK_WRITE test execution successfully completed.
+00:19:10,661  INFO [main] - 
+-------------------------------------------------
+BULK_WRITE test statistics
+BULK_WRITE messages: 848000
+BULK_WRITE errors: 0, 0.00%
+BULK_WRITE speed: 5047 msg/sec
+-------------------------------------------------
+00:19:10,661  INFO [main] - 
+-------------------------------------------------
+BULK_WRITE test statistics
+BULK_WRITE messages: 848000
+BULK_WRITE errors: 0, 0.00%
+BULK_WRITE speed: 5047 msg/sec
+-------------------------------------------------
+00:19:10,724  INFO [main] - Command protocol successfully stopped: TCP binary
+00:19:10,898  INFO [main] - Stopped cache: orderItem
+00:19:10,907  INFO [main] - Stopped cache: cmsOrder
+00:19:10,920  INFO [main] - Stopped cache: ignite-marshaller-sys-cache
+00:19:10,920  INFO [main] - Stopped cache: ignite-sys-cache
+00:19:10,921  INFO [main] - Stopped cache: ignite-atomics-sys-cache
+00:19:10,954  INFO [main] - 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:02:48:351
+
+
+00:19:10,994  INFO [main] - Ignite load tests execution completed
+00:19:10,994  INFO [main] - Ignite load tests execution completed

@@ -1,0 +1,495 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/bin/java -Xms1024m -Xmx1024m -DIGNITE_SKIP_CONFIGURATION_CONSISTENCY_CHECK=true -Didea.launcher.port=7541 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 14.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/htmlconverter.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Users/twer/Work/kefuzhongxin/poc/build_env/ignite-demo/target/classes:/Users/twer/.m2/repository/org/apache/ignite/ignite-core/1.7.0/ignite-core-1.7.0.jar:/Users/twer/.m2/repository/javax/cache/cache-api/1.0.0/cache-api-1.0.0.jar:/Users/twer/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/twer/.m2/repository/org/gridgain/ignite-shmem/1.0.0/ignite-shmem-1.0.0.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-cassandra/1.7.0/ignite-cassandra-1.7.0.jar:/Users/twer/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/twer/.m2/repository/com/esotericsoftware/kryo/3.0.3/kryo-3.0.3.jar:/Users/twer/.m2/repository/com/esotericsoftware/reflectasm/1.10.1/reflectasm-1.10.1.jar:/Users/twer/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/Users/twer/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/twer/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/twer/.m2/repository/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.jar:/Users/twer/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar:/Users/twer/.m2/repository/io/netty/netty-handler/4.0.27.Final/netty-handler-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-buffer/4.0.27.Final/netty-buffer-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-common/4.0.27.Final/netty-common-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-transport/4.0.27.Final/netty-transport-4.0.27.Final.jar:/Users/twer/.m2/repository/io/netty/netty-codec/4.0.27.Final/netty-codec-4.0.27.Final.jar:/Users/twer/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/Users/twer/.m2/repository/com/codahale/metrics/metrics-core/3.0.2/metrics-core-3.0.2.jar:/Users/twer/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/twer/.m2/repository/com/google/code/simple-spring-memcached/spymemcached/2.7.3/spymemcached-2.7.3.jar:/Users/twer/.m2/repository/org/jboss/netty/netty/3.2.0.Final/netty-3.2.0.Final.jar:/Users/twer/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/twer/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-spring/1.7.0/ignite-spring-1.7.0.jar:/Users/twer/.m2/repository/org/springframework/spring-core/4.1.0.RELEASE/spring-core-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-aop/4.1.0.RELEASE/spring-aop-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/twer/.m2/repository/org/springframework/spring-expression/4.1.0.RELEASE/spring-expression-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-tx/4.1.0.RELEASE/spring-tx-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-jdbc/4.1.0.RELEASE/spring-jdbc-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-indexing/1.7.0/ignite-indexing-1.7.0.jar:/Users/twer/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar:/Users/twer/.m2/repository/org/apache/lucene/lucene-core/3.5.0/lucene-core-3.5.0.jar:/Users/twer/.m2/repository/com/h2database/h2/1.4.191/h2-1.4.191.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-log4j/1.7.0/ignite-log4j-1.7.0.jar:/Users/twer/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/twer/.m2/repository/org/apache/ignite/ignite-core/1.7.0/ignite-core-1.7.0-tests.jar:/Users/twer/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/twer/.m2/repository/org/springframework/spring-beans/4.1.0.RELEASE/spring-beans-4.1.0.RELEASE.jar:/Users/twer/.m2/repository/org/springframework/spring-context/4.1.0.RELEASE/spring-context-4.1.0.RELEASE.jar:/Applications/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.apache.ignite.tests.IgnitePersistentStoreLoadTest 192.168.0.103 localhost
+00:30:32,854  INFO [main] - Ignite load tests execution started
+00:30:32,854  INFO [main] - Ignite load tests execution started
+00:30:32,880  INFO [main] - Running Query test
+00:30:32,880  INFO [main] - Running Query test
+00:30:32,885  INFO [main] - Starting workers
+00:30:32,885  INFO [main] - Starting workers
+00:30:32,885  INFO [main] - Setting up load tests driver
+00:30:32,885  INFO [main] - Setting up load tests driver
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+00:30:33,582  INFO [main] - 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+00:30:33,583  INFO [main] - Config URL: n/a
+00:30:33,583  INFO [main] - Daemon mode: off
+00:30:33,583  INFO [main] - OS: Mac OS X 10.12.1 x86_64
+00:30:33,583  INFO [main] - OS user: twer
+00:30:33,584  INFO [main] - Language runtime: Java Platform API Specification ver. 1.8
+00:30:33,584  INFO [main] - VM information: Java(TM) SE Runtime Environment 1.8.0-ea-b120 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.0-b62
+00:30:33,584  INFO [main] - VM total memory: 0.96GB
+00:30:33,585  INFO [main] - Remote Management [restart: off, REST: on, JMX (remote: off)]
+00:30:33,585  INFO [main] - IGNITE_HOME=null
+00:30:33,586  INFO [main] - VM arguments: [-Xms1024m, -Xmx1024m, -DIGNITE_SKIP_CONFIGURATION_CONSISTENCY_CHECK=true, -Didea.launcher.port=7541, -Didea.launcher.bin.path=/Applications/IntelliJ IDEA 14.app/Contents/bin, -Dfile.encoding=UTF-8]
+00:30:33,586  INFO [main] - Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache', 'cmsOrder', 'orderItem']
+00:30:33,709  INFO [main] - Non-loopback local IPs: 192.168.0.103, fe80:0:0:0:1420:7dd1:c994:b3bb%en0, fe80:0:0:0:bc3:9612:dcff:87a4%utun0, fe80:0:0:0:e879:32ff:feea:eb6b%awdl0
+00:30:33,710  INFO [main] - Enabled local MACs: EA7932EAEB6B, F45C89A41BA7
+00:30:33,727  INFO [main] - Configured plugins:
+00:30:33,727  INFO [main] -   ^-- None
+00:30:33,727  INFO [main] - 
+00:30:33,794  INFO [main] - IPC shared memory server endpoint started [port=48101, tokDir=/var/folders/4c/dg3n7kld5z931ypg18nxwh1c0000gn/T/ignite/work/ipc/shmem/5bd2a4de-f6b1-4bdd-aad0-09fd370516ac-21022]
+00:30:33,795  INFO [main] - Successfully bound shared memory communication to TCP port [port=48101, locHost=0.0.0.0/0.0.0.0]
+00:30:33,822  INFO [main] - Successfully bound to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0]
+00:30:33,884  WARN [main] - Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+00:30:33,970  WARN [main] - Collision resolution is disabled (all jobs will be activated upon arrival).
+00:30:33,978  WARN [main] - Swap space is disabled. To enable use FileSwapSpaceSpi.
+00:30:33,981  INFO [main] - Security status [authentication=off, tls/ssl=off]
+00:30:34,530  INFO [main] - Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+00:30:35,124  WARN [main] - Some classes in query configuration cannot be written in binary format because they either implement Externalizable interface or have writeObject/readObject methods. Instances of these classes will be deserialized in order to build indexes. Please ensure that all nodes have these classes in classpath. To enable binary serialization either implement Binarylizable interface or set explicit serializer using BinaryTypeConfiguration.setSerializer() method: [class pri.wenbo.pojos.CmsOrder]
+00:30:35,125  WARN [main] - <cmsOrder> Persistence store is configured, but both read-through and write-through are disabled. This configuration makes sense if the store implements loadCache method only. If this is the case, ignore this warning. Otherwise, fix the configuration for the cache: cmsOrder
+00:30:35,149  INFO [main] - Started cache [name=cmsOrder, mode=PARTITIONED]
+00:30:35,173  INFO [main] - Started cache [name=ignite-sys-cache, mode=REPLICATED]
+00:30:35,174  INFO [main] - Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+00:30:35,178  WARN [main] - Some classes in query configuration cannot be written in binary format because they either implement Externalizable interface or have writeObject/readObject methods. Instances of these classes will be deserialized in order to build indexes. Please ensure that all nodes have these classes in classpath. To enable binary serialization either implement Binarylizable interface or set explicit serializer using BinaryTypeConfiguration.setSerializer() method: [class pri.wenbo.pojos.OrderItem]
+00:30:35,178  WARN [main] - <orderItem> Persistence store is configured, but both read-through and write-through are disabled. This configuration makes sense if the store implements loadCache method only. If this is the case, ignore this warning. Otherwise, fix the configuration for the cache: orderItem
+00:30:35,178  INFO [main] - Started cache [name=orderItem, mode=PARTITIONED]
+00:30:35,179  INFO [main] - Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+00:30:35,312  INFO [main] - To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+00:30:35,313  INFO [main] - 
+00:30:35,313  INFO [main] - 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Mac OS X 10.12.1 x86_64
+>>> CPU(s): 8
+>>> Heap: 1.0GB
+>>> VM name: 21022@wenbo.local
+>>> Local node [ID=5BD2A4DE-F6B1-4BDD-AAD0-09FD370516AC, order=10, clientMode=true]
+>>> Local node addresses: [192.168.0.103/0:0:0:0:0:0:0:1, /127.0.0.1, /192.168.0.103]
+>>> Local ports: TCP:11212 TCP:47101 TCP:48101 
+
+00:30:35,314  INFO [main] - Topology snapshot [ver=10, servers=1, clients=1, CPUs=8, heap=11.0GB]
+00:30:35,314  INFO [main] - Load tests driver setup successfully completed
+00:30:35,314  INFO [main] - Load tests driver setup successfully completed
+00:30:35,316  INFO [main] - Setting up load tests driver
+00:30:35,316  INFO [main] - Setting up load tests driver
+00:30:35,316  INFO [Query-worker-0] - Test execution started
+00:30:35,324  INFO [main] - Load tests driver setup successfully completed
+00:30:35,324  INFO [main] - Load tests driver setup successfully completed
+00:30:35,325  INFO [main] - Setting up load tests driver
+00:30:35,325  INFO [main] - Setting up load tests driver
+00:30:35,325  INFO [Query-worker-1] - Test execution started
+00:30:35,338  INFO [main] - Load tests driver setup successfully completed
+00:30:35,338  INFO [main] - Load tests driver setup successfully completed
+00:30:35,338  INFO [main] - Setting up load tests driver
+00:30:35,338  INFO [Query-worker-2] - Test execution started
+00:30:35,338  INFO [main] - Setting up load tests driver
+00:30:35,347  INFO [main] - Load tests driver setup successfully completed
+00:30:35,347  INFO [main] - Load tests driver setup successfully completed
+00:30:35,348  INFO [main] - Setting up load tests driver
+00:30:35,348  INFO [main] - Setting up load tests driver
+00:30:35,348  INFO [Query-worker-3] - Test execution started
+00:30:35,356  INFO [main] - Load tests driver setup successfully completed
+00:30:35,356  INFO [main] - Load tests driver setup successfully completed
+00:30:35,356  INFO [main] - Setting up load tests driver
+00:30:35,356  INFO [Query-worker-4] - Test execution started
+00:30:35,356  INFO [main] - Setting up load tests driver
+00:30:35,365  INFO [main] - Load tests driver setup successfully completed
+00:30:35,365  INFO [main] - Load tests driver setup successfully completed
+00:30:35,366  INFO [main] - Setting up load tests driver
+00:30:35,366  INFO [main] - Setting up load tests driver
+00:30:35,366  INFO [Query-worker-5] - Test execution started
+00:30:35,407  INFO [main] - Load tests driver setup successfully completed
+00:30:35,407  INFO [main] - Load tests driver setup successfully completed
+00:30:35,410  INFO [main] - Setting up load tests driver
+00:30:35,410  INFO [Query-worker-6] - Test execution started
+00:30:35,410  INFO [main] - Setting up load tests driver
+00:30:35,442  INFO [main] - Load tests driver setup successfully completed
+00:30:35,442  INFO [main] - Load tests driver setup successfully completed
+00:30:35,442  INFO [main] - Setting up load tests driver
+00:30:35,442  INFO [main] - Setting up load tests driver
+00:30:35,442  INFO [Query-worker-7] - Test execution started
+00:30:35,449  INFO [main] - Load tests driver setup successfully completed
+00:30:35,449  INFO [main] - Load tests driver setup successfully completed
+00:30:35,450  INFO [main] - Setting up load tests driver
+00:30:35,450  INFO [main] - Setting up load tests driver
+00:30:35,450  INFO [Query-worker-8] - Test execution started
+00:30:35,456  INFO [main] - Load tests driver setup successfully completed
+00:30:35,456  INFO [main] - Load tests driver setup successfully completed
+00:30:35,457  INFO [main] - Setting up load tests driver
+00:30:35,457  INFO [main] - Setting up load tests driver
+00:30:35,457  INFO [Query-worker-9] - Test execution started
+00:30:35,591  INFO [main] - Load tests driver setup successfully completed
+00:30:35,591  INFO [main] - Load tests driver setup successfully completed
+00:30:35,591  INFO [main] - Setting up load tests driver
+00:30:35,591  INFO [main] - Setting up load tests driver
+00:30:35,591  INFO [Query-worker-10] - Test execution started
+00:30:35,598  INFO [main] - Load tests driver setup successfully completed
+00:30:35,598  INFO [main] - Load tests driver setup successfully completed
+00:30:35,598  INFO [main] - Setting up load tests driver
+00:30:35,598  INFO [main] - Setting up load tests driver
+00:30:35,598  INFO [Query-worker-11] - Test execution started
+00:30:35,606  INFO [main] - Load tests driver setup successfully completed
+00:30:35,606  INFO [main] - Load tests driver setup successfully completed
+00:30:35,606  INFO [main] - Setting up load tests driver
+00:30:35,606  INFO [main] - Setting up load tests driver
+00:30:35,606  INFO [Query-worker-12] - Test execution started
+00:30:35,615  INFO [main] - Load tests driver setup successfully completed
+00:30:35,615  INFO [main] - Load tests driver setup successfully completed
+00:30:35,615  INFO [main] - Setting up load tests driver
+00:30:35,616  INFO [Query-worker-13] - Test execution started
+00:30:35,615  INFO [main] - Setting up load tests driver
+00:30:35,623  INFO [main] - Load tests driver setup successfully completed
+00:30:35,623  INFO [main] - Load tests driver setup successfully completed
+00:30:35,624  INFO [main] - Setting up load tests driver
+00:30:35,624  INFO [Query-worker-14] - Test execution started
+00:30:35,624  INFO [main] - Setting up load tests driver
+00:30:35,634  INFO [main] - Load tests driver setup successfully completed
+00:30:35,634  INFO [main] - Load tests driver setup successfully completed
+00:30:35,635  INFO [main] - Setting up load tests driver
+00:30:35,635  INFO [main] - Setting up load tests driver
+00:30:35,635  INFO [Query-worker-15] - Test execution started
+00:30:35,649  INFO [main] - Load tests driver setup successfully completed
+00:30:35,649  INFO [main] - Load tests driver setup successfully completed
+00:30:35,650  INFO [main] - Setting up load tests driver
+00:30:35,650  INFO [main] - Setting up load tests driver
+00:30:35,650  INFO [Query-worker-16] - Test execution started
+00:30:35,662  INFO [main] - Load tests driver setup successfully completed
+00:30:35,662  INFO [main] - Load tests driver setup successfully completed
+00:30:35,663  INFO [main] - Setting up load tests driver
+00:30:35,663  INFO [Query-worker-17] - Test execution started
+00:30:35,663  INFO [main] - Setting up load tests driver
+00:30:35,677  INFO [main] - Load tests driver setup successfully completed
+00:30:35,677  INFO [main] - Load tests driver setup successfully completed
+00:30:35,678  INFO [main] - Setting up load tests driver
+00:30:35,678  INFO [Query-worker-18] - Test execution started
+00:30:35,678  INFO [main] - Setting up load tests driver
+00:30:35,689  INFO [main] - Load tests driver setup successfully completed
+00:30:35,689  INFO [main] - Load tests driver setup successfully completed
+00:30:35,690  INFO [main] - Workers started
+00:30:35,690  INFO [main] - Workers started
+00:30:35,690  INFO [main] - Waiting for workers to complete
+00:30:35,690  INFO [Query-worker-19] - Test execution started
+00:30:35,690  INFO [main] - Waiting for workers to complete
+00:30:44,740  INFO [ignite-update-notifier-timer] - Your version is up to date.
+00:30:56,624  INFO [Query-worker-9] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42369
+Processing speed: 2017 msg/sec
+Errors: 0 / 0.00%
+00:30:56,700  INFO [Query-worker-3] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42180
+Processing speed: 2008 msg/sec
+Errors: 0 / 0.00%
+00:30:56,717  INFO [Query-worker-7] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42312
+Processing speed: 2014 msg/sec
+Errors: 0 / 0.00%
+00:30:56,733  INFO [Query-worker-0] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42174
+Processing speed: 2008 msg/sec
+Errors: 0 / 0.00%
+00:30:56,734  INFO [main] - Worker Query-worker-0 successfully completed
+00:30:56,734  INFO [main] - Worker Query-worker-0 successfully completed
+00:30:56,740  INFO [Query-worker-1] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42174
+Processing speed: 2008 msg/sec
+Errors: 0 / 0.00%
+00:30:56,740  INFO [main] - Worker Query-worker-1 successfully completed
+00:30:56,740  INFO [main] - Worker Query-worker-1 successfully completed
+00:30:56,858  INFO [Query-worker-13] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42617
+Processing speed: 2029 msg/sec
+Errors: 0 / 0.00%
+00:30:56,908  INFO [Query-worker-5] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42187
+Processing speed: 2008 msg/sec
+Errors: 0 / 0.00%
+00:30:56,912  INFO [Query-worker-11] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 42401
+Processing speed: 2019 msg/sec
+Errors: 0 / 0.00%
+00:30:56,918  INFO [Query-worker-19] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 43078
+Processing speed: 2051 msg/sec
+Errors: 0 / 0.00%
+00:30:56,991  INFO [Query-worker-17] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:56
+Duration: 21 sec
+Processed messages: 43017
+Processing speed: 2048 msg/sec
+Errors: 0 / 0.00%
+00:30:57,198  INFO [Query-worker-15] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:30:57
+Duration: 21 sec
+Processed messages: 42636
+Processing speed: 2030 msg/sec
+Errors: 0 / 0.00%
+00:31:05,338  INFO [Query-worker-2] - Messages processed 78993, speed 2633 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,356  INFO [Query-worker-4] - Messages processed 78816, speed 2627 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,410  INFO [Query-worker-6] - Messages processed 78896, speed 2629 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,450  INFO [Query-worker-8] - Messages processed 79276, speed 2642 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,591  INFO [Query-worker-10] - Messages processed 79628, speed 2654 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,606  INFO [Query-worker-12] - Messages processed 79934, speed 2664 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,624  INFO [Query-worker-14] - Messages processed 79796, speed 2659 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,650  INFO [Query-worker-16] - Messages processed 80185, speed 2672 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:05,678  INFO [Query-worker-18] - Messages processed 80213, speed 2673 msg/sec, 10% completed, errors 0 / 0.00%
+00:31:35,340  INFO [Query-worker-2] - Messages processed 186695, speed 3111 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,356  INFO [Query-worker-4] - Messages processed 186581, speed 3109 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,410  INFO [Query-worker-6] - Messages processed 187077, speed 3117 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,450  INFO [Query-worker-8] - Messages processed 187763, speed 3129 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,591  INFO [Query-worker-10] - Messages processed 187580, speed 3126 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,612  INFO [Query-worker-12] - Messages processed 187692, speed 3128 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,624  INFO [Query-worker-14] - Messages processed 188006, speed 3133 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,650  INFO [Query-worker-16] - Messages processed 188185, speed 3136 msg/sec, 20% completed, errors 0 / 0.00%
+00:31:35,678  INFO [Query-worker-18] - Messages processed 188605, speed 3143 msg/sec, 20% completed, errors 0 / 0.00%
+00:32:05,338  INFO [Query-worker-2] - Messages processed 307581, speed 3417 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,358  INFO [Query-worker-4] - Messages processed 307030, speed 3411 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,410  INFO [Query-worker-6] - Messages processed 307858, speed 3420 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,450  INFO [Query-worker-8] - Messages processed 308104, speed 3423 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,591  INFO [Query-worker-10] - Messages processed 307492, speed 3416 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,611  INFO [Query-worker-12] - Messages processed 308389, speed 3426 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,624  INFO [Query-worker-14] - Messages processed 308786, speed 3430 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,650  INFO [Query-worker-16] - Messages processed 308219, speed 3424 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:05,678  INFO [Query-worker-18] - Messages processed 310007, speed 3444 msg/sec, 30% completed, errors 0 / 0.00%
+00:32:35,338  INFO [Query-worker-2] - Messages processed 480411, speed 4003 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,358  INFO [Query-worker-4] - Messages processed 480850, speed 4007 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,410  INFO [Query-worker-6] - Messages processed 480990, speed 4008 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,450  INFO [Query-worker-8] - Messages processed 482075, speed 4017 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,591  INFO [Query-worker-10] - Messages processed 481282, speed 4010 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,611  INFO [Query-worker-12] - Messages processed 481923, speed 4016 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,624  INFO [Query-worker-14] - Messages processed 481893, speed 4015 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,650  INFO [Query-worker-16] - Messages processed 482346, speed 4019 msg/sec, 40% completed, errors 0 / 0.00%
+00:32:35,678  INFO [Query-worker-18] - Messages processed 483168, speed 4026 msg/sec, 40% completed, errors 0 / 0.00%
+00:33:05,339  INFO [Query-worker-2] - Messages processed 645599, speed 4303 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,358  INFO [Query-worker-4] - Messages processed 645360, speed 4302 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,410  INFO [Query-worker-6] - Messages processed 646583, speed 4310 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,450  INFO [Query-worker-8] - Messages processed 646246, speed 4308 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,591  INFO [Query-worker-10] - Messages processed 646371, speed 4309 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,611  INFO [Query-worker-12] - Messages processed 646428, speed 4309 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,624  INFO [Query-worker-14] - Messages processed 646676, speed 4311 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,650  INFO [Query-worker-16] - Messages processed 647194, speed 4314 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:05,678  INFO [Query-worker-18] - Messages processed 648146, speed 4320 msg/sec, 50% completed, errors 0 / 0.00%
+00:33:35,338  INFO [Query-worker-2] - Messages processed 813057, speed 4516 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,358  INFO [Query-worker-4] - Messages processed 812663, speed 4514 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,410  INFO [Query-worker-6] - Messages processed 812927, speed 4516 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,450  INFO [Query-worker-8] - Messages processed 812498, speed 4513 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,591  INFO [Query-worker-10] - Messages processed 811616, speed 4508 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,611  INFO [Query-worker-12] - Messages processed 812953, speed 4516 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,624  INFO [Query-worker-14] - Messages processed 813573, speed 4519 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,650  INFO [Query-worker-16] - Messages processed 814638, speed 4525 msg/sec, 60% completed, errors 0 / 0.00%
+00:33:35,678  INFO [Query-worker-18] - Messages processed 815346, speed 4529 msg/sec, 60% completed, errors 0 / 0.00%
+00:34:05,338  INFO [Query-worker-2] - Messages processed 1000203, speed 4762 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,358  INFO [Query-worker-4] - Messages processed 1000076, speed 4762 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,410  INFO [Query-worker-6] - Messages processed 1000843, speed 4765 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,450  INFO [Query-worker-8] - Messages processed 1000318, speed 4763 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,591  INFO [Query-worker-10] - Messages processed 999973, speed 4761 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,611  INFO [Query-worker-12] - Messages processed 1001152, speed 4767 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,624  INFO [Query-worker-14] - Messages processed 1001781, speed 4770 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,650  INFO [Query-worker-16] - Messages processed 1001077, speed 4767 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:05,678  INFO [Query-worker-18] - Messages processed 1001797, speed 4770 msg/sec, 70% completed, errors 0 / 0.00%
+00:34:35,338  INFO [Query-worker-2] - Messages processed 1182299, speed 4926 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,358  INFO [Query-worker-4] - Messages processed 1181787, speed 4924 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,410  INFO [Query-worker-6] - Messages processed 1182875, speed 4928 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,450  INFO [Query-worker-8] - Messages processed 1182245, speed 4926 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,591  INFO [Query-worker-10] - Messages processed 1182421, speed 4926 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,611  INFO [Query-worker-12] - Messages processed 1183423, speed 4930 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,624  INFO [Query-worker-14] - Messages processed 1183371, speed 4930 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,650  INFO [Query-worker-16] - Messages processed 1182814, speed 4928 msg/sec, 80% completed, errors 0 / 0.00%
+00:34:35,678  INFO [Query-worker-18] - Messages processed 1184102, speed 4933 msg/sec, 80% completed, errors 0 / 0.00%
+00:35:05,339  INFO [Query-worker-2] - Messages processed 1360459, speed 5038 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,358  INFO [Query-worker-4] - Messages processed 1361408, speed 5042 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,410  INFO [Query-worker-6] - Messages processed 1362053, speed 5044 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,450  INFO [Query-worker-8] - Messages processed 1361228, speed 5041 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,591  INFO [Query-worker-10] - Messages processed 1360648, speed 5039 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,611  INFO [Query-worker-12] - Messages processed 1361638, speed 5043 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,624  INFO [Query-worker-14] - Messages processed 1361771, speed 5043 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,650  INFO [Query-worker-16] - Messages processed 1361705, speed 5043 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:05,678  INFO [Query-worker-18] - Messages processed 1363110, speed 5048 msg/sec, 90% completed, errors 0 / 0.00%
+00:35:35,338  INFO [Query-worker-2] - Messages processed 1545579, speed 5151 msg/sec, 100% completed, errors 0 / 0.00%
+00:35:35,343  INFO [Query-worker-2] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1545584
+Processing speed: 5151 msg/sec
+Errors: 0 / 0.00%
+00:35:35,345  INFO [main] - Worker Query-worker-2 successfully completed
+00:35:35,345  INFO [main] - Worker Query-worker-2 successfully completed
+00:35:35,347  INFO [main] - Worker Query-worker-3 successfully completed
+00:35:35,347  INFO [main] - Worker Query-worker-3 successfully completed
+00:35:35,357  INFO [Query-worker-4] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1546672
+Processing speed: 5155 msg/sec
+Errors: 0 / 0.00%
+00:35:35,357  INFO [main] - Worker Query-worker-4 successfully completed
+00:35:35,357  INFO [main] - Worker Query-worker-4 successfully completed
+00:35:35,357  INFO [main] - Worker Query-worker-5 successfully completed
+00:35:35,357  INFO [main] - Worker Query-worker-5 successfully completed
+00:35:35,410  INFO [Query-worker-6] - Messages processed 1546468, speed 5154 msg/sec, 100% completed, errors 0 / 0.00%
+00:35:35,411  INFO [Query-worker-6] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1546475
+Processing speed: 5154 msg/sec
+Errors: 0 / 0.00%
+00:35:35,411  INFO [main] - Worker Query-worker-6 successfully completed
+00:35:35,411  INFO [main] - Worker Query-worker-6 successfully completed
+00:35:35,411  INFO [main] - Worker Query-worker-7 successfully completed
+00:35:35,411  INFO [main] - Worker Query-worker-7 successfully completed
+00:35:35,450  INFO [Query-worker-8] - Messages processed 1546994, speed 5156 msg/sec, 100% completed, errors 0 / 0.00%
+00:35:35,451  INFO [Query-worker-8] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1547001
+Processing speed: 5156 msg/sec
+Errors: 0 / 0.00%
+00:35:35,451  INFO [main] - Worker Query-worker-8 successfully completed
+00:35:35,451  INFO [main] - Worker Query-worker-8 successfully completed
+00:35:35,451  INFO [main] - Worker Query-worker-9 successfully completed
+00:35:35,451  INFO [main] - Worker Query-worker-9 successfully completed
+00:35:35,591  INFO [Query-worker-10] - Messages processed 1546734, speed 5155 msg/sec, 100% completed, errors 0 / 0.00%
+00:35:35,592  INFO [Query-worker-10] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1546742
+Processing speed: 5155 msg/sec
+Errors: 0 / 0.00%
+00:35:35,592  INFO [main] - Worker Query-worker-10 successfully completed
+00:35:35,592  INFO [main] - Worker Query-worker-10 successfully completed
+00:35:35,592  INFO [main] - Worker Query-worker-11 successfully completed
+00:35:35,592  INFO [main] - Worker Query-worker-11 successfully completed
+00:35:35,607  INFO [Query-worker-12] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1547686
+Processing speed: 5158 msg/sec
+Errors: 0 / 0.00%
+00:35:35,607  INFO [main] - Worker Query-worker-12 successfully completed
+00:35:35,607  INFO [main] - Worker Query-worker-12 successfully completed
+00:35:35,607  INFO [main] - Worker Query-worker-13 successfully completed
+00:35:35,607  INFO [main] - Worker Query-worker-13 successfully completed
+00:35:35,624  INFO [Query-worker-14] - Messages processed 1547105, speed 5157 msg/sec, 100% completed, errors 0 / 0.00%
+00:35:35,625  INFO [Query-worker-14] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1547111
+Processing speed: 5157 msg/sec
+Errors: 0 / 0.00%
+00:35:35,625  INFO [main] - Worker Query-worker-14 successfully completed
+00:35:35,625  INFO [main] - Worker Query-worker-14 successfully completed
+00:35:35,626  INFO [main] - Worker Query-worker-15 successfully completed
+00:35:35,626  INFO [main] - Worker Query-worker-15 successfully completed
+00:35:35,650  INFO [Query-worker-16] - Messages processed 1548043, speed 5160 msg/sec, 100% completed, errors 0 / 0.00%
+00:35:35,651  INFO [Query-worker-16] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1548050
+Processing speed: 5160 msg/sec
+Errors: 0 / 0.00%
+00:35:35,651  INFO [main] - Worker Query-worker-16 successfully completed
+00:35:35,651  INFO [main] - Worker Query-worker-16 successfully completed
+00:35:35,651  INFO [main] - Worker Query-worker-17 successfully completed
+00:35:35,651  INFO [main] - Worker Query-worker-17 successfully completed
+00:35:35,678  INFO [Query-worker-18] - Messages processed 1549608, speed 5165 msg/sec, 100% completed, errors 0 / 0.00%
+00:35:35,679  INFO [Query-worker-18] - Test execution successfully completed. Statistics: 
+Start time: 12:30:35
+Finish time: 12:35:35
+Duration: 300 sec
+Processed messages: 1549617
+Processing speed: 5165 msg/sec
+Errors: 0 / 0.00%
+00:35:35,679  INFO [main] - Worker Query-worker-18 successfully completed
+00:35:35,679  INFO [main] - Worker Query-worker-18 successfully completed
+00:35:35,679  INFO [main] - Worker Query-worker-19 successfully completed
+00:35:35,679  INFO [main] - Worker Query-worker-19 successfully completed
+00:35:35,681  INFO [main] - Query test execution successfully completed.
+00:35:35,681  INFO [main] - Query test execution successfully completed.
+00:35:35,685  INFO [main] - 
+-------------------------------------------------
+Query test statistics
+Query messages: 14392083
+Query errors: 0, 0.00%
+Query speed: 68651 msg/sec
+-------------------------------------------------
+00:35:35,685  INFO [main] - 
+-------------------------------------------------
+Query test statistics
+Query messages: 14392083
+Query errors: 0, 0.00%
+Query speed: 68651 msg/sec
+-------------------------------------------------
+00:35:35,744  INFO [main] - Command protocol successfully stopped: TCP binary
+00:35:35,946  INFO [main] - Stopped cache: orderItem
+00:35:35,952  INFO [main] - Stopped cache: cmsOrder
+00:35:35,952  INFO [main] - Stopped cache: ignite-marshaller-sys-cache
+00:35:35,953  INFO [main] - Stopped cache: ignite-sys-cache
+00:35:35,953  INFO [main] - Stopped cache: ignite-atomics-sys-cache
+00:35:35,968  INFO [main] - 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:05:00:659
+
+
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+[00:35:35] (wrn) Ignoring stopping grid instance that was already stopped or never started: null
+00:35:35,976  INFO [main] - Ignite load tests execution completed
+00:35:35,976  INFO [main] - Ignite load tests execution completed

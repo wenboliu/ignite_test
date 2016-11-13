@@ -9,11 +9,10 @@
     </tableOptions>
     <keyPersistence class="pri.wenbo.pojos.OrderItemId" strategy="POJO">
         <partitionKey>
-            <field name="dpId" column="dpId" />
+            <field name="dpIdOrderId" column="dpIdOrderId" />
         </partitionKey>
 
         <clusterKey>
-            <field name="orderId" column="orderId"/>
             <field name="oid" column="oid"/>
         </clusterKey>
     </keyPersistence>
