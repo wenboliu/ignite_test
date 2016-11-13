@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 public class CmsOrder implements Externalizable {
     @QuerySqlField
     private String customerno;
+
     @QuerySqlField
     private long created;
 

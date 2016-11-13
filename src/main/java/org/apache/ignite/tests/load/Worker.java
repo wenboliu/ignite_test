@@ -230,7 +230,7 @@ public abstract class Worker extends Thread {
                         String cacheName = testObject.getCacheName();
                         Map map = batchMap.get(cacheName);
                         if(map == null) {
-                            batchMap.put(cacheName, new HashMap<>());
+                            batchMap.put(cacheName, new HashMap<>(TestsHelper.getBulkOperationSize()));
                         }
                         batchMap.get(cacheName).put(testObject.getKey(), testObject.getValue());
                     }

@@ -19,10 +19,10 @@ package org.apache.ignite.tests;
 
 import com.google.common.base.Splitter;
 import org.apache.ignite.tests.load.LoadTestDriver;
+import org.apache.ignite.tests.load.QueryRunningContextFactoryImpl;
 import org.apache.ignite.tests.load.RuntimeManager;
 import org.apache.ignite.tests.load.RuntimeManagerFactory;
-import org.apache.ignite.tests.load.WriteOrderAndItemRunningContextFactoryImpl;
-import org.apache.ignite.tests.load.ignite.WriteWorker;
+import org.apache.ignite.tests.load.ignite.QueryWorker;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -55,9 +55,11 @@ public class IgnitePersistentStoreLoadTest extends LoadTestDriver {
             LoadTestDriver driver = new IgnitePersistentStoreLoadTest();
 
 
-            driver.runTest("WRITE", WriteWorker.class, runtimeManagerFactory, WriteWorker.LOGGER_NAME, new WriteOrderAndItemRunningContextFactoryImpl());
+//            driver.runTest("WRITE", WriteWorker.class, runtimeManagerFactory, WriteWorker.LOGGER_NAME, new WriteOrderAndItemRunningContextFactoryImpl());
 
 //            driver.runTest("BULK_WRITE", BulkWriteWorker.class, runtimeManagerFactory, BulkWriteWorker.LOGGER_NAME, new WriteOrderAndItemRunningContextFactoryImpl());
+
+            driver.runTest("Query", QueryWorker.class, runtimeManagerFactory, QueryWorker.LOGGER_NAME, new QueryRunningContextFactoryImpl());
 
 //            driver.runTest("READ", ReadWorker.class, hosts, ReadWorker.LOGGER_NAME, new RunningContextFactoryImpl(cacheNames));
 

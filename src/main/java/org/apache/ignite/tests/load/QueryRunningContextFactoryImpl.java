@@ -3,12 +3,12 @@ package org.apache.ignite.tests.load;
 
 import org.apache.ignite.tests.utils.TestsHelper;
 
-public class WriteOrderAndItemRunningContextFactoryImpl implements RunningContextFactory {
+public class QueryRunningContextFactoryImpl implements RunningContextFactory {
     private final int parallel;
     private final int range;
 
 
-    public WriteOrderAndItemRunningContextFactoryImpl() {
+    public QueryRunningContextFactoryImpl() {
         this.parallel = TestsHelper.getLoadTestsThreadsCount();
         this.range = TestsHelper.getLoadTestsDBCount();
     }
@@ -18,6 +18,6 @@ public class WriteOrderAndItemRunningContextFactoryImpl implements RunningContex
     public RunningContext createRunningContext(int i) {
         int start = range * i / parallel;
         int end = range * (i + 1) / parallel;
-        return new WriteOrderAndItemRunningContextImpl(start, end);
+        return new QueryRunningContextImpl(start, end);
     }
 }

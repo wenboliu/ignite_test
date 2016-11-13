@@ -3,10 +3,7 @@ package org.apache.ignite.tests.load;
 import pri.wenbo.pojos.OrderItemStatus;
 import pri.wenbo.pojos.OrderStatus;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by Mofy on 2016/11/2.
@@ -28,9 +25,13 @@ public class LoadDataUtils {
 
     public static long randomDate()
     {
-        long current = System.currentTimeMillis();
-        long randomDate = current - (random.nextInt(30*24*3600) * 1000);
-        return randomDate;
+        return getEndDate() - (random.nextInt(30*24*3600) * 1000);
+    }
+
+    public static long getEndDate() {
+        Calendar instance = Calendar.getInstance();
+        instance.set(2016, 0, 1);
+        return instance.getTimeInMillis();
     }
 
     public static String toString(int id, int length)

@@ -11,10 +11,10 @@ import java.io.Serializable;
 public class OrderItemId implements Serializable{
 
     @QuerySqlField
-    @AffinityKeyMapped
     private String dpId;
 
     @QuerySqlField
+    @AffinityKeyMapped
     private String orderId;
 
     @QuerySqlField
@@ -46,7 +46,7 @@ public class OrderItemId implements Serializable{
 
     public String getId()
     {
-        return dpId + "_" + orderId + "_" + oid;
+        return orderId + "_" + oid;
     }
 
     @Override
@@ -56,7 +56,7 @@ public class OrderItemId implements Serializable{
 
     @Override
     public boolean equals(Object obj) {
-        return getId().equals(((OrderItemId)obj).getId());
+        return getId().equals(((OrderItemId) obj).getId());
     }
 
 }
