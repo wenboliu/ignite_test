@@ -8,12 +8,32 @@
     <artifactId>ignite-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
+    <repositories>
+        <repository>
+            <id>GridGain External Repository</id>
+            <url>http://www.gridgainsystems.com/nexus/content/repositories/external</url>
+        </repository>
+    </repositories>
+
     <properties>
-        <ignite.version>1.7.0</ignite.version>
+        <ignite.version>1.7.3</ignite.version>
         <spring.version>4.1.0.RELEASE</spring.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.gridgain</groupId>
+            <artifactId>gridgain-core</artifactId>
+            <version>7.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.ignite</groupId>
+            <artifactId>ignite-indexing</artifactId>
+            <version>${ignite.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.ignite</groupId>
             <artifactId>ignite-core</artifactId>
@@ -21,6 +41,7 @@
         </dependency>
 
         <dependency>
+
             <groupId>org.apache.ignite</groupId>
             <artifactId>ignite-cassandra</artifactId>
             <version>${ignite.version}</version>

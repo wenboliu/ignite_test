@@ -1,5 +1,6 @@
 package org.apache.ignite.tests.load.ignite;
 
+import com.google.common.base.Splitter;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.cache.affinity.AffinityKey;
 import org.apache.ignite.cache.query.QueryCursor;
@@ -47,8 +48,8 @@ public class QueryWorker extends Worker {
         long start = middle - 1800 * 1000;
         long end = middle + 1800 * 1000;
         String dpIdOrderId = (String) key;
-        SqlQuery personJoinSql = new SqlQuery<AffinityKey<String>, CmsOrder>(CmsOrder.class, "from \"cmsOrder\".CmsOrder , \"orderItem\".OrderItem where \"cmsOrder\".CmsOrder._key = \"orderItem\".OrderItem.dpIdOrderId and \"cmsOrder\".CmsOrder._key = ? and \"cmsOrder\".CmsOrder.created >= ? and \"cmsOrder\".CmsOrder.created <= ? ");
-        personJoinSql.setArgs(dpIdOrderId, start, end);
+        SqlQuery personJoinSql = new SqlQuery<AffinityKey<String>, CmsOrder>(CmsOrder.class, "from \"cmsOrder\".CmsOrder , \"orderItem\".OrderItem where \"cmsOrder\".CmsOrder._key = \"orderItem\".OrderItem.dpIdOrderId and \"cmsOrder\".CmsOrder._key like ? and \"cmsOrder\".CmsOrder.created >= ? and \"cmsOrder\".CmsOrder.created <= ? ");
+        personJoinSql.setArgs(Splitter.on("-").split(dpIdOrderId).iterator().next()+"-%", start, end);
         personJoinSql.setPageSize(10);
         personJoinSql.setDistributedJoins(true);
 
